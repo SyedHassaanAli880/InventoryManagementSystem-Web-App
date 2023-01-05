@@ -1,0 +1,228 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "AppDBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "InventoryManagementSystem",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Categories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ProductPrices]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Products]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PurchaseInvoiceDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PurchaseInvoices]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SaleDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Sales]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Stocks]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Suppliers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[st_CheckProductExist]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_deleteProducts]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_deleteProductsFromPurchaseInvoiceDetails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_deleteSuppliers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getAllSaleDetails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getCategories]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getCategoriesList]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getLastPurchaseInvoiceId]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductbyBarcode]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductIdwrtBarcodeFromProductPrices]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductQuantity]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductQuantityFromStock]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductsbyBarcodeForPurchaseInvoices]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_GetProductStockwrtProductID]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductswrtCategories]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getProductwrtBarcodeForSale]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getPurchaseInvoiceDetails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getPurchaseInvoiceList]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getSalesID]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getStock]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_getSuppliers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertCategories]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertProductPrices]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertProducts]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertPurchaseInvoiceDetails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertPurchaseInvoices]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertSales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertSalesDetails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertStock]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_insertSuppliers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_LoadListSuppliers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_searchCategories]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_searchProducts]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_searchSuppliers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_updateProductPrices]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_updateProductPriceswrtDate]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_updateProducts]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_updateStocks]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[st_updateSuppliers]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "DESKTOP-PAESO76\\MSSQLSERVER01.InvDB",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
