@@ -46,32 +46,33 @@ namespace InventoryManagementSystem.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProductPrices(long id, ProductPrices productPrices)
         {
-            //if (id != productPrices.ProdPriceProductId)
-            //{
-            //    return BadRequest();
-            //}
+            if (id != productPrices.ProdPriceProductId)
+            {
+                return BadRequest();
+            }
 
-            //_context.Entry(productPrices).State = EntityState.Modified;
+            _context.Entry(productPrices).State = EntityState.Modified;
 
-            //try
-            //{
-            //    await _context.SaveChangesAsync();
-            //}
-            //catch (DbUpdateConcurrencyException)
-            //{
-            //    if (!ProductPricesExists(id))
-            //    {
-            //        return NotFound();
-            //    }
-            //    else
-            //    {
-            //        throw;
-            //    }
-            //}
+            try
+            {
+                await _context.SaveChangesAsync();
+                return Ok(productPrices);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductPricesExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-            await _context.GetProcedures().st_updateProductPricesAsync(productPrices.ProdPriceSellingPrice,productPrices.ProdPriceProfit,productPrices.ProdPriceDiscount, Convert.ToInt64(productPrices.ProdPriceBuyingPrice),id);
+            //await _context.GetProcedures().st_updateProductPricesAsync(productPrices.ProdPriceSellingPrice,productPrices.ProdPriceProfit,productPrices.ProdPriceDiscount, Convert.ToInt64(productPrices.ProdPriceBuyingPrice),id);
 
-            return NoContent();
+            //return NoContent();
         }
 
             

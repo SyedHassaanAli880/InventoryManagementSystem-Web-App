@@ -52,12 +52,14 @@ namespace InventoryManagementSystem.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                return Ok(products);
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!ProductsExists(id))
                 {
                     return NotFound();
+
                 }
                 else
                 {
@@ -65,7 +67,7 @@ namespace InventoryManagementSystem.Controllers
                 }
             }
 
-            return NoContent();
+            
         }
 
         // POST: api/Products
